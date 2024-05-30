@@ -1,4 +1,4 @@
-import { Stack } from '@mui/material';
+import { Stack ,Box} from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
@@ -9,7 +9,9 @@ function Navbar() {
 backgroundColor='transparent'
 direction={{xs:'column',md:'row'}}
 alignItems="center"
-p={2}
+justifyContent='center'
+p={{xs:0,md:2}}
+pt={{xs:2,md:2}}
 sx={
 {position:'fixed',
 top:0,
@@ -20,9 +22,13 @@ justifyContent:'space-between'}
 }
 >
 <Link to="/" className='center'>
+<Box sx={{paddingBottom:{xs:"10px"}}}>
 <Logo/>
+</Box>
 </Link>
+<Box sx={{paddingBottom:{xs:"10px"}}}>
 <SearchBar/>
+</Box>
 </Stack>
 )
 }

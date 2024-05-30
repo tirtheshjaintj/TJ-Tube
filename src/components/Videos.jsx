@@ -3,7 +3,7 @@ import { Stack,Box } from '@mui/material';
 import {VideoCard,ChannelCard} from './';
 import CircularProgress from '@mui/material/CircularProgress';
 function Videos({videos,direction}) {
-    if(!videos?.length)  return <div className="center"><CircularProgress/> </div>;
+    if(!videos?.length)  return <div className="center2"><CircularProgress/> </div>;
   return (
 <Stack direction={direction||'row'} flexWrap='wrap' sx={{ justifyContent:'center' }} gap={2}>
   {videos && videos.map((item,index)=>(

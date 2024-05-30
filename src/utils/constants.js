@@ -12,7 +12,6 @@ import GraphicEqIcon from '@mui/icons-material/GraphicEq';
 import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
-export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
 const create=(obj)=>{
 return React.createElement(obj);
 }
@@ -20,8 +19,6 @@ return React.createElement(obj);
 export const categories = [
   { name: 'Trending', icon: create(HomeIcon) },
   { name: 'Coding', icon: create(CodeIcon) },
-  { name: 'ReactJS', icon: create(CodeIcon) },
-  { name: 'NextJS', icon: create(CodeIcon) },
   { name: 'Music', icon: create(MusicNoteIcon) },
   { name: 'Education', icon: create(SchoolIcon) },
   { name: 'Podcast', icon: create(GraphicEqIcon) },

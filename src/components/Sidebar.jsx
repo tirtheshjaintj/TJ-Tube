@@ -7,8 +7,10 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
     direction="row"
     sx={{
       overflowY: "auto",
-      height: { sx: "auto", md: "95%" },
+      height: { sx: "auto", md: "100%" },
       flexDirection: { md: "column" },
+      padding:'10px',
+      paddingTop:'110px'
     }}
   >
     {categories.map((category) => (
@@ -16,15 +18,15 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
         className="category-btn"
         onClick={() => setSelectedCategory(category.name)}
         style={{
-          background: category.name === selectedCategory && "#FC1503",
-          color: "white",
+          background: category.name === selectedCategory && "#F31503",
+          color: "#fff",
         }}
         key={category.name}
       >
-        <span style={{ color: category.name === selectedCategory ? "white" : "red", marginRight: "15px" }}>
+        <span style={{ color: category.name === selectedCategory ? "white" : "red", marginRight: "15px",textShadow:'0px 0px 2px black' }}>
           {category.icon}
         </span>
-        <span style={{ opacity: category.name === selectedCategory ? "1" : "0.8" }}>
+        <span style={{ opacity: category.name === selectedCategory ? "1" : "0.9" ,textShadow:'1px 1px 2px black'}}>
           {category.name}
         </span>
       </button>

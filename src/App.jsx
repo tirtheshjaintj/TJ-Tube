@@ -9,7 +9,7 @@ import { Navbar } from './components'
 function App() {
   return (
     <>
-    <Box sx={{backgroundColor:'#141c3a',marginTop:'100px'}}>
+    <Box sx={{backgroundColor:'#141c3a'}}>
       <Navbar/>
      <Outlet/>
     </Box>

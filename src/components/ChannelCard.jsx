@@ -10,15 +10,14 @@ const ChannelCard = ({ channelDetail, marginTop ,channelId}) => (
   sx={{
     width: {xs:'100%',md:'380px'},
     margin: '15px',
-    backgroundColor: '#1C1C1E',
     color: '#FFFFFF',
     borderRadius: '50px',
     overflow: 'hidden',
-    boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.5)',
     transition: 'transform 0.3s, box-shadow 0.3s',
+    marginTop,
     '&:hover': {
-      transform: 'scale(1.05)',
-      boxShadow: '0px 5px 20px rgba(0, 0, 0, 0.7)',
+      transform: 'scale(1.1)',
+      filter: 'drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.7))',
     },
   }}
   >
