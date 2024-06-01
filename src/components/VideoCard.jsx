@@ -11,7 +11,7 @@ const VideoCard = ({ video: { id: { videoId }, snippet } }) => {
   return (
     <Card
       sx={{
-        width: { xs: '100%', md: '380px' },
+        minWidth: { xs: '90vw', md: '350px' },
         margin: '15px',
         color: '#FFFFFF',
         backgroundColor: '#141c3a',
@@ -20,7 +20,7 @@ const VideoCard = ({ video: { id: { videoId }, snippet } }) => {
         boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.5)',
         transition: 'transform 0.3s, box-shadow 0.3s',
         '&:hover': {
-          transform: 'scale(1.1)',
+          transform: 'scale(1.05)',
           boxShadow: '0px 5px 20px rgba(0, 0, 0, 0.7)',
         },
       }}
@@ -33,8 +33,9 @@ const VideoCard = ({ video: { id: { videoId }, snippet } }) => {
             <ReactPlayer
               url={`https://www.youtube.com/watch?v=${videoId}`}
               playing={isHovered}
-              width="100%"
-              height="100%"
+              // width="100%"
+              // height="100%"
+              sx={{minWidth: { xs: '90vw', md: '350px' }}}
               style={{ position: 'absolute', top: 0, left: 0 }}
               config={{
                 youtube: {
@@ -56,7 +57,8 @@ const VideoCard = ({ video: { id: { videoId }, snippet } }) => {
               component="img"
               src={snippet?.thumbnails?.high?.url || demoThumbnailUrl}
               alt={snippet?.title}
-              sx={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+              
+              sx={{ position: 'absolute', top: 0, left: 0 ,minWidth: { xs: '90vw', md: '350px' }, height: '100%', objectFit: 'cover' }}
             />
           )}
         </Box>

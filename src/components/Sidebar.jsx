@@ -26,7 +26,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
         <span style={{ color: category.name === selectedCategory ? "white" : "red", marginRight: "15px",textShadow:'0px 0px 2px black' }}>
           {category.icon}
         </span>
-        <span style={{ opacity: category.name === selectedCategory ? "1" : "0.9" ,textShadow:'1px 1px 2px black'}}>
+        <span style={{ opacity: category.name === selectedCategory ? "1" : "0.9" ,textShadow:'0px 0px 2px black'}}>
           {category.name}
         </span>
       </button>

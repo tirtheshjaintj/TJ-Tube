@@ -22,8 +22,8 @@ function Feed() {
 <Box sx={{height:{sx:'auto',md:'100vh'},borderRight:'1px solid #3D3D3D',px:{sx:0,md:2}}}>
   <Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
 </Box>
-<Box pl={2} sx={{overflowY:'auto',height:'100vh',flex:2,paddingTop:{xs:'10px',md:'100px'}}}>
-  <Typography variant='h4' fontWeight='bold' mb={2} sx={{color:'white'}}>
+<Box pl={{xs:0,md:2}} sx={{overflowY:'auto',height:'100vh',flex:2,paddingTop:{xs:'10px',md:'100px'}}}>
+  <Typography variant='h4' fontWeight='bold' mb={2} p={2} sx={{color:'white'}}>
     {selectedCategory} <span style={{color:'#F31503'}}>Videos</span>
   </Typography>
   <Videos videos={videos}/>

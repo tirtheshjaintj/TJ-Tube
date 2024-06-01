@@ -8,7 +8,7 @@ import { demoThumbnailUrl,demoChannelUrl} from "../utils/constants";
 const ChannelCard = ({ channelDetail, marginTop ,channelId}) => (
   <Box
   sx={{
-    width: {xs:'100%',md:'380px'},
+    minWidth: { xs: '90vw', md: '380px' },
     margin: '15px',
     color: '#FFFFFF',
     borderRadius: '50px',
